@@ -6,7 +6,7 @@
 package Contribuicao;
 
 import bancodedados.Acesso;
-import dados.*;
+import d;
 import java.sql.*;
 
 /**

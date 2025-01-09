@@ -8,7 +8,7 @@
 import com.mysql.jdbc.CommunicationsException;
 import java.io.IOException;
 import java.sql.*;
-import marcenaria.Const.Messagem;
+
 
 /**
  * @version 1.2

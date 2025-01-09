@@ -7,6 +7,7 @@ package Salario;
 
 import bancodedados.Acesso;
 import dados.*;
+import transformer.*;
 import java.sql.*;
 import javax.swing.JOptionPane;
 
@@ -638,7 +639,7 @@ public class SalarioMinimo {
      * OK Este Metodo faz a importação do arquilo sql do salario minimo.
      */
     public static void importarSalarioMinino() {
-        DataBase.importarBackupdataBaseSQL(Acesso.CAMINHOSALARIO, Acesso.getBANCO());
+        transformer.DataBaseTransformer.importarBackupdataBaseSQL(Acesso.CAMINHOSALARIO, Acesso.getBANCO());
     }
 
     /**
@@ -648,7 +649,7 @@ public class SalarioMinimo {
     public static void exportarSalarioMinimo() {
         String criar = createDadostoString(), insercao = SalarioMinimo.InsertDadostoString(), backup = criar + "\n" + insercao;
 
-        dados.DataBase.exportarBackupdataBaseSQL("C:\\Users\\Carlos\\Desktop\\PROGRAMAR\\" + getTABELA() + "1.sql", backup);
+        transformer.DataBaseTransformer.exportarBackupdataBaseSQL("C:\\Users\\Carlos\\Desktop\\PROGRAMAR\\" + getTABELA() + "1.sql", backup);
 
     }
 

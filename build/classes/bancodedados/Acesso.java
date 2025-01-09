@@ -5,7 +5,7 @@
  */
 package bancodedados;
 
-import dados.*;
+import dados.DataBase;
 
 /**
  *
@@ -27,7 +27,7 @@ public class Acesso {
         return BANCO;
     }
     public static boolean VerificarExisterBanco(){
-        return dados.DataBase.verificarExisterDataBase(BANCO);
+        return DataBase.verificarExisterDataBase(BANCO);
     }
     //-------------------------------------------------------------------------------------//
   

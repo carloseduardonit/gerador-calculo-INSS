@@ -30,5 +30,5 @@ public class Acesso {
         return dados.DataBase.verificarExisterDataBase(BANCO);
     }
     //-------------------------------------------------------------------------------------//
-  
+   
 }

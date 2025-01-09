@@ -18,7 +18,7 @@ public class Juros {
      * 1 - O juros pode ser simples ou composto 1.1 juros simples 1.2 juros
      * composto
      */
-    public static void Juros() {
+    public Juros() {
 
     }
 
