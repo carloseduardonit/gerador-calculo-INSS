@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-
 import com.mysql.jdbc.CommunicationsException;
 import java.io.IOException;
 import java.sql.*;
@@ -14,6 +13,24 @@ import java.sql.*;
  * @version 1.2
  * @author Carlos Eduardo dos Santos Figueiredo
  * @see ModuloConector
+ * @since 01/05/2019
+ * A classe ModuloConector fornece métodos para conectar a um banco de dados MySQL,
+ * executar aplicações e fechar conexões. Inclui vários métodos sobrecarregados
+ * para estabelecer conexões usando diferentes parâmetros, como nome do banco de dados,
+ * usuário e senha.
+ * 
+ * <p>Também lida com exceções relacionadas a conexões de banco de dados e fornece
+ * métodos para fechar conexões e conjuntos de resultados.</p>
+ * 
+ * <p>Exemplo de uso:</p>
+ * <pre>
+ * {@code
+ * ModuloConector.conector();
+ * Connection conn = ModuloConector.getConecction();
+ * }
+ * </pre>
+ * 
+ * @version 1.1
  * @since 01/05/2019
  */
 public class ModuloConector {

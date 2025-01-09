@@ -11,14 +11,14 @@ package Contribuicao;
  */
 public class Juros {
 
-    private static double capital, taxa, montante;
+    private static double capital, juros, taxa, montante;
     private static int tempo;
 
     /**
      * 1 - O juros pode ser simples ou composto 1.1 juros simples 1.2 juros
      * composto
      */
-    public static void Juros() {
+    public Juros() {
 
     }
 
@@ -41,7 +41,7 @@ public class Juros {
      * simples.
      */
     public static double JuroSimples(double capital, double taxa, int tempo) {
-        final double in = porcetagem(taxa);
+        double in = porcetagem(taxa);
         return capital * in * tempo;
     }
 
@@ -85,7 +85,8 @@ public class Juros {
      * @return
      */
     public static double montantedoJurosSimples(double capital, double taxa, int tempo) {
-        final double montante = capital, juros = JuroSimples(capital, taxa, tempo);
+        juros = JuroSimples(capital, taxa, tempo);
+        montante = capital;
         return montante + juros;
     }
 
@@ -114,7 +115,8 @@ public class Juros {
      * @return
      */
     public static double montantedoJurosComposto(double capital, double taxa, int tempo) {
-        double montante = capital, juros = Math.pow(1 + porcetagem(taxa), tempo);
+        montante = capital;
+        juros = Math.pow(1 + porcetagem(taxa), tempo);
         return montante * juros;
     }
 

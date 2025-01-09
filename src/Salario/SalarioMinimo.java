@@ -38,6 +38,7 @@ public class SalarioMinimo {
 
     public static void main(String[] args) {
         //System.out.println(createDadostoString());
+        criarTabelaSalarioMinimo();
         exportarSalarioMinimo();
     }
     //-----------------------------------Metodo para Acesso ao banco de dados --------------------------------------------------//

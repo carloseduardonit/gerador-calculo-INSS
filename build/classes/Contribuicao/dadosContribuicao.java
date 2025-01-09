@@ -6,7 +6,7 @@
 package Contribuicao;
 
 import bancodedados.Acesso;
-import d;
+import static dados.;
 import java.sql.*;
 
 /**
@@ -39,7 +39,7 @@ public class dadosContribuicao {
      * 
      */
     private static void dadosCont() {
-        conexao = ModuloConector.getConecction(Acesso.getBANCO());
+        conexao = dados.ModuloConector.getConecction(Acesso.getBANCO());
     }
     //------------------------------------Metodos de Manipilação do Banco de dados-------------------------------------------------//
 
@@ -105,7 +105,7 @@ public class dadosContribuicao {
      *
      */
     public static void importarDadosContribuicao() {
-        DataBase.importarBackupdataBaseSQL(Acesso.CAMINHOCONTRIBUICAO, Acesso.getBANCO());
+        dados.DataBase.importarBackupdataBaseSQL(Acesso.CAMINHOCONTRIBUICAO, Acesso.getBANCO());
     }
     //------------------------------------Metodos gets e sets-------------------------------------------------//
 
