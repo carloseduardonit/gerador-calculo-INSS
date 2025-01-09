@@ -1,4 +1,29 @@
-# Gerador  de Cálculo de INSS
+# Gerador de Cálculo do INSS
+
+🚀 **Versão Atual**: 1.0  
+📅 **Última Atualização**: Janeiro de 2025
+
+## Sobre o Projeto
+
+Este projeto simplifica o cálculo de contribuições para o **INSS** usando **Java**. Ele automatiza o processamento de valores com base em alíquotas e faixas salariais atualizadas, facilitando a gestão de pagamentos e obrigações legais.
+
+---
+
+## Funcionalidades
+
+- Cálculo automático de INSS com base em diferentes faixas de salário.
+- Aplicação das alíquotas vigentes.
+- Interface de linha de comando para entradas e resultados.
+
+---
+
+## Como Executar
+
+1. Clone o repositório:
+
+```bash
+   git clone https://github.com/carloseduardonit/gerador-calculo-INSS.git
+```
 
 ## :writing_hand: Linguagens utilizadas
 
