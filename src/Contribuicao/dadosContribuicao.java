@@ -8,6 +8,7 @@ package Contribuicao;
 import bancodedados.Acesso;
 import dados.*;
 import java.sql.*;
+import transformer.DataBaseTransformer;
 
 /**
  *
@@ -105,7 +106,7 @@ public class dadosContribuicao {
      *
      */
     public static void importarDadosContribuicao() {
-        DataBase.importarBackupdataBaseSQL(Acesso.CAMINHOCONTRIBUICAO, Acesso.getBANCO());
+        DataBaseTransformer.importarBackupdataBaseSQL(Acesso.CAMINHOCONTRIBUICAO, Acesso.getBANCO());
     }
     //------------------------------------Metodos gets e sets-------------------------------------------------//
 
